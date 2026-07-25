@@ -1,32 +1,36 @@
 const add = function (a, b) {
-  return a + b;
+    return a + b;
 };
 
 const subtract = function (a, b) {
-  return a - b;
+    return a - b;
 };
 
-const sum = function (arr) {
-  return arr.reduce((total, number) => total + number , 0)
-
+const multiply = function (a, b) {
+    return a * b;
 };
-
-const multiply = function (arr) {
-  return arr.reduce((total, number) => total * number, 1)
-};
+const division = function (a, b) {
+    return a / b;
+}
 
 const power = function (a, b) {
-  let exponential = 1
-  for (i = 1; i <= b; i++) {
-    exponential=exponential*a;
-  }
-  return exponential;
+    let exponential = 1
+    for (i = 1; i <= b; i++) {
+        exponential = exponential * a;
+    }
+    return exponential;
 };
 
-const factorial = function (a) {
-  let factorial=1;
-  for (i=1;i<=a;i++)
-    factorial = factorial*i;
-  return factorial;
+let number1 = null;
+let operator = null;
+let number2 = null;
 
-};
+function operate(funcOperator, funcNumber1, funcNumber2) {
+    switch (funcOperator) {
+        case "×": multiply(funcNumber1, funcNumber2); break;
+        case "÷": division(funcNumber1, funcNumber2); break;
+        case "+": add(funcNumber1, funcNumber2); break;
+        case "-": subtract(funcNumber1,funcNumber2);break;
+        default: return "ERR";
+    }
+}
