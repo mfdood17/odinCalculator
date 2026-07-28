@@ -6,18 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div id="calculator">
         <div id="title">CALCULATORUL CREIZI</div>
         <div id="display">
-            <div id="displayContent">ddskjfahdsjfhkdsh  </div>
+            <div id="displayContent">0</div>
         </div>
         <div id="calculatorButtons">
             <div class="column" id="column1">
                 <div class="row">
-                    <button id="clear">C</button>
+                    <button class="clear">C</button>
                 </div>
                 <div class="row">
                     <button class="digit">7</button>
@@ -36,8 +41,8 @@
                 </div>
                 <div class="row">
                     <button class="digit">0</button>
-                    <button>,</button>
-                    <button>←</button>
+                    <button class="digit">.</button>
+                    <button class="backspace">←</button>
                 </div>
             </div>
             <div class="column" id="column2">
@@ -45,10 +50,11 @@
                 <button class="operator">×</button>
                 <button class="operator">-</button>
                 <button class="operator">+</button>
-                <button>=</button>
+                <button class="equal">=</button>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

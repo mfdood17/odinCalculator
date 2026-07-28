@@ -1,38 +1,53 @@
-body{
-    background-color: blanchedalmond;
+body {
+    background-color:white;
+      font-family: "Bitcount Grid Single", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
 }
+
 #calculator {
-    display:flex;
+    display: flex;
     flex-direction: column;
     width: 300px;
     height: 500px;
-    margin:auto;
+    margin: auto;
 }
+
 #display {
     flex: 1;
     border-style: solid;
     margin: 3px;
-    display:flex;
+    display: flex;
     justify-content: end;
     align-items: center;
     background-color: #A9CFA9;
 }
-#title{
-    flex:1;
-    display:flex;
+
+#title {
+    flex: 1;
+    display: flex;
     align-items: center;
     border-style: none;
     justify-content: center;
 }
-#displayContent{
-    align-items:end;
-    flex:0;
+
+#displayContent {
+    align-items: end;
+    flex: 0;
     font-size: 30px;
+    padding: 3px;
 }
+
 #calculatorButtons {
     display: flex;
     flex-direction: row;
-    flex:5;
+    flex: 5;
 }
 
 .column {
@@ -58,9 +73,10 @@ button {
     padding: 5px;
     margin: 3px;
     font-size: 30px;
+    font-family: inherit;
+    background-color: beige;
 }
 
 #clear {
     flex: 3;
 }
-
